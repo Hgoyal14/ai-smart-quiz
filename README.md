@@ -1,98 +1,58 @@
-AI Quiz Generation
-==================
+# 🔮 AI Smart Quiz – Generate Quizzes Instantly with AI
 
-Demonstration of quiz generation using OpenAI's GPT-3.5 API.
+A smart quiz generator that transforms any text you provide into an interactive quiz using OpenAI's GPT-3.5. Built with Nuxt 3, Vue 3, and Vuetify.  
+Created and customized by **Harshita Goyal**.
 
-Demo link: https://deephow-ai-quiz-nn0q.onrender.com
+---
 
-Features
---------
+## 🚀 What It Does
 
-- Input text for generation
-- Select language (default to English)
-- Generate quiz questions from text
-    - Main points
-    - Multiple choice questions
-    - True/false questions
-    - Keywords and definition matching
-    - Cloze questions
-    - Cloze paragraph questions
-    - Sort SOP steps
-    - Fill in the blanks in SOP diagram
+AI Smart Quiz helps educators, students, and content creators turn input text into:
+- ✅ Multiple Choice Questions (MCQs)
+- ✅ True or False Questions
+- ✅ Cloze (Fill-in-the-blank)
+- ✅ Matching Type Questions
 
-### Limitations
+All powered by cutting-edge **Natural Language Processing (NLP)** via the **OpenAI GPT-3.5 API**.
 
-- The text input is limited to 1500 characters to avoid exceeding the token limit of the OpenAI API. Longer text will be truncated.
+---
 
-### Future Work
+## 🧩 Features
 
-- Optimization for multiple choice questions
-- Retry failed generation requests
+- 🧠 Smart AI-generated questions from raw text
+- 🌍 Language selector to generate quizzes in different languages
+- 🎨 Clean, responsive UI using Vuetify
+- ⚙️ Handles token limits to prevent long-input failures
+- ✨ Built with scalable Nuxt 3 + Pinia architecture
 
-Development
------------
+---
 
-Built with:
-- Full Stack: [Nuxt 3](https://nuxt.com/)
-- Frontend: [Vue 3](https://vuejs.org/)
-- UI Component: [Vuetify](https://vuetifyjs.com/)
-- State Management: [Pinia](https://pinia.vuejs.org/)
+## 🌐 Live Demo
 
-### Prerequisites
-1. [Node.js](https://nodejs.org/en/) >= 16.10.0
-2. [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/) or [pnpm](https://pnpm.io/)
+> 📌 Coming Soon  
+> *(Or deploy it free on [Render](https://render.com) / [Railway](https://railway.app) / [Vercel](https://vercel.com))*
 
-### Setup
-1. `git clone` this repository
-2. Install the dependencies:
+---
 
-    ```bash
-    # yarn
-    yarn install
+## 💻 Tech Stack
 
-    # npm
-    npm install
+| Frontend        | AI Engine      | State Mgmt | UI Library |
+|-----------------|----------------|------------|------------|
+| Vue 3 (Nuxt 3)  | OpenAI GPT-3.5 | Pinia      | Vuetify    |
 
-    # pnpm
-    pnpm install
-    ```
-3. Create a `.env` file in the root directory and add the following environment variables:
+---
 
-    ```bash
-    OPENAI_API_KEY=<your-openai-api-key>
-    OPENAI_ORG_ID=<your-openai-org-id>
-    ```
+## 📸 Screenshots
 
-### Development Server
+> 📷 Add screenshots here once deployed
 
-Start the development server on `http://localhost:3000`
+---
+
+## 🛠️ Getting Started
+
+To run locally:
 
 ```bash
-npm run dev #or
-yarn run dev
-```
-
-### Production
-
-Build the application for production:
-
-```bash
-npm run build #or
-yarn run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-### Deployment
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-> ***Note***: Please make sure your deployment platform has sufficient timeout limit for the quiz generation API call. 
-> 
-> For example, free plan of [Vercel](https://vercel.com/) and [Netlify](https://www.netlify.com/) are **not recommended** for this project as they have a 10s timeout limit for serverless functions. The quiz generation process may take longer than 10s. 
-> 
-> [Render](https://render.com/), [Heroku](https://www.heroku.com/), [Railway](https://railway.app/), [DigitalOcean](https://www.digitalocean.com/), [AWS](https://aws.amazon.com/), [Azure](https://azure.microsoft.com/), [Google Cloud](https://cloud.google.com/) are recommended for deployment.
+npm install
+npm run dev
+om/), [AWS](https://aws.amazon.com/), [Azure](https://azure.microsoft.com/), [Google Cloud](https://cloud.google.com/) are recommended for deployment.
